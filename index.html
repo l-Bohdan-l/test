@@ -28,7 +28,31 @@
     </script> -->
     <!-- Add your code here -->
 
+    <!-- <script>
+      (function (d, t) {
+        var BASE_URL =
+          "https://chatwoot-1129-66a20d9505aea11100000059.ubos.tech";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+          window.chatwootSDK.run({
+            websiteToken: "DTiSyNeepXsdcyWag9fUVAEw",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
+    </script> -->
+
     <script>
+      window.chatwootSettings = {
+        position: "right",
+        type: "expanded_bubble",
+        launcherTitle: "Chat with AI",
+      };
       (function (d, t) {
         var BASE_URL =
           "https://chatwoot-1129-66a20d9505aea11100000059.ubos.tech";
